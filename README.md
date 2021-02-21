@@ -11,7 +11,7 @@ Please feel free to play and leave some comments.
  
 ### Credits: 
 
-Art and programming by [Veronica Kwok](https://www.linkedin.com/in/veronica-kwok-93ba17158)
+Art, programming and game design by [Veronica Kwok](https://www.linkedin.com/in/veronica-kwok-93ba17158)
 
 Background music from [FREESOUND website](https://freesound.org/people/eric5335/sounds/102129/)
 
