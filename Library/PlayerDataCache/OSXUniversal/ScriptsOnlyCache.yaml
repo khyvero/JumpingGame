@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CountDownManager
     - CountDownTimer
     - Food
+    - Game
     - Player
     - ScoreLable
     - ScoreManager
@@ -88,29 +89,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11546}
+      Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 11600}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12030}
+      Script: {instanceID: 12032}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 12268}
     - Class: 114
-      Script: {instanceID: 13356}
+      Script: {instanceID: 13358}
     - Class: 114
-      Script: {instanceID: 13730}
+      Script: {instanceID: 13732}
     - Class: 114
-      Script: {instanceID: 13812}
+      Script: {instanceID: 13814}
     - Class: 114
-      Script: {instanceID: 14344}
-    - Class: 114
-      Script: {instanceID: 14404}
+      Script: {instanceID: 14346}
     - Class: 114
       Script: {instanceID: 14406}
+    - Class: 114
+      Script: {instanceID: 14408}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -155,6 +156,33 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/Initial.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11250}
+    - Class: 114
+      Script: {instanceID: 12032}
+    - Class: 114
+      Script: {instanceID: 13358}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -772,10 +800,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 2
   scenePathNames:
+  - Assets/Scenes/Initial.unity
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Controls.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/HighScore.unity
   - Assets/Scenes/MidScore.unity
   - Assets/Scenes/LowScore.unity
-  playerPath: /Users/veronicakwok/Desktop/resume/show_work/GameHungrySqurrel/theme06_jumping/game/Jumping_2021-02-21.app
+  playerPath: /Users/veronicakwok/Desktop/resume/show_work/GameHungrySqurrel/theme06_jumping/game/HungrySquirrel.app

@@ -131,12 +131,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
-       // bool up = Input.GetKey(KeyCode.UpArrow);
         bool left = Input.GetKey(KeyCode.LeftArrow);
         bool right = Input.GetKey(KeyCode.RightArrow);
         bool jump  = Input.GetKey(KeyCode.Space) ;
-
 
         handleWalkAndJump(jump , left, right);
 
@@ -144,7 +141,7 @@ public class Player : MonoBehaviour
 
     }
 
-    [System.Obsolete]
+    //[System.Obsolete]
     void OnCollisionStay2D(Collision2D collision)
     {
         if ("Ground".Equals(collision.gameObject.name))
@@ -163,7 +160,7 @@ public class Player : MonoBehaviour
             collision.gameObject.transform.SetParent(gameObject.transform);
             Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
             playerFacing = PlayerFacing.MID;
-            collision.gameObject.transform.position = gameObject.transform.FindChild("CatchPosition").transform.position;
+            collision.gameObject.transform.position = gameObject.transform.Find("CatchPosition").transform.position;
 
 
             CountDownTimer.GetInstance().CountDown("addScorelLabel_timer", 1f, () =>
@@ -176,7 +173,7 @@ public class Player : MonoBehaviour
                 rb.isKinematic = false;
                 rb.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
                 SetSprite("player_StandMid");
-                collision.gameObject.transform.position = gameObject.transform.FindChild("FoodPosition").transform.position;
+                collision.gameObject.transform.position = gameObject.transform.Find("FoodPosition").transform.position;
                 eatAudio.PlayDelayed(0.8f);
 
             });
@@ -184,7 +181,7 @@ public class Player : MonoBehaviour
 
             CountDownTimer.GetInstance().CountDown("eatingFood_Timer" ,3.2f, () => {
                 playerCatchFood = false;
-                Destroy(gameObject.transform.FindChild("Food(Clone)").gameObject);
+                Destroy(gameObject.transform.Find("Food(Clone)").gameObject);
             });
         }
         
